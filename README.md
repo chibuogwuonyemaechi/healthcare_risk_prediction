@@ -2,47 +2,47 @@
 
 A clean, reproducible ML workflow for heart-disease risk prediction:
 
-- **EDA**: distributions + correlation heatmap (saved as PNG)
-- **Model selection**: Logistic Regression, Random Forest, optional XGBoost (auto-select best by CV ROC AUC)
-- **Evaluation**: ROC AUC, PR AUC, confusion matrix, classification report
-- **Explainability**: SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
+- **EDA:** distributions + correlation heatmap (saved as PNG)
+- **Model selection:** Logistic Regression, Random Forest, optional XGBoost (auto-select best by CV ROC AUC)
+- **Evaluation:** ROC AUC, PR AUC, confusion matrix, classification report
+- **Explainability:** SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
 
 ## Quickstart
+
 ```bash
 conda create -n heartds python=3.10 -y
 conda activate heartds
 pip install -r requirements.txt
 python healthcare_risk_prediction_static.py
 
-### Artifacts saved to outputs/:
+Artifacts (saved to outputs/)
 
-- eda_distributions.png, corr_matrix.png
+eda_distributions.png, corr_matrix.png
 
-- roc_pr_curves.png, confusion_matrix.png
+roc_pr_curves.png, confusion_matrix.png
 
-- shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
+shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
 
-- metrics.json
+metrics.json
 
-#### Results (sample)
-<p> <img src="images/roc_pr_curves.png" width="600"> <img src="images/confusion_matrix.png" width="360"> </p> <p> <img src="images/shap_summary-600dpi.png" width="900"> </p>
+Results (sample)
+<p> <img src="images/roc_pr_curves.png" width="600" /> <img src="images/confusion_matrix.png" width="360" /> </p> <p> <img src="images/shap_summary-600dpi.png" width="900" /> </p>
+Headline numbers (example)
 
-##### Headline numbers (example)
+CV ROC AUC (LogReg winner): 0.903
 
-- CV ROC AUC (LogReg winner): 0.903
+Test ROC AUC: 0.926
 
-- Test ROC AUC: 0.926
+Test PR AUC: 0.812
 
-- Test PR AUC: 0.812
+Notes
 
-###### Notes
+Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
 
-- Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
+If xgboost is hard to install on your system, remove it from requirements.txt — the script falls back to LogReg/RF.
 
-- If xgboost is hard to install on your system, remove it from requirements.txt — the script falls back to LogReg/RF.
+Deterministic by default (seed=42).
 
-- Deterministic by default (seed=42).
+License
 
-####### License
-
-- MIT
+MIT
