@@ -15,34 +15,35 @@ conda activate heartds
 pip install -r requirements.txt
 python healthcare_risk_prediction_static.py
 
-Artifacts (saved to outputs/)
+### Artifacts (saved to outputs/)
 
-eda_distributions.png, corr_matrix.png
+- eda_distributions.png, corr_matrix.png
 
-roc_pr_curves.png, confusion_matrix.png
+- roc_pr_curves.png, confusion_matrix.png
 
-shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
+- shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
 
-metrics.json
+- metrics.json
 
-Results (sample)
+### Results (sample)
 <p> <img src="images/roc_pr_curves.png" width="600" /> <img src="images/confusion_matrix.png" width="360" /> </p> <p> <img src="images/shap_summary-600dpi.png" width="900" /> </p>
-Headline numbers (example)
 
-CV ROC AUC (LogReg winner): 0.903
+#### Headline numbers (example)
 
-Test ROC AUC: 0.926
+- CV ROC AUC (LogReg winner): 0.903
 
-Test PR AUC: 0.812
+- Test ROC AUC: 0.926
 
-Notes
+- Test PR AUC: 0.812
 
-Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
+##### Notes
 
-If xgboost is hard to install on your system, remove it from requirements.txt — the script falls back to LogReg/RF.
+- Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
 
-Deterministic by default (seed=42).
+- If xgboost is hard to install on your system, remove it from requirements.txt — the script falls back to LogReg/RF.
 
-License
+- Deterministic by default (seed=42).
+
+###### License
 
 MIT
