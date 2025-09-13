@@ -1,30 +1,11 @@
-# Healthcare Risk Prediction (Heart Disease Demo)
-
-A compact, health-style classification demo using a public Heart dataset.
-
-## What it shows
-- EDA: distributions & correlation heatmap
-- Models: Logistic Regression, Random Forest, XGBoost (auto-select best by CV ROC AUC)
-- Metrics: ROC AUC, PR AUC, confusion matrix, classification report
-- Interpretability: SHAP summary plot
-
-## How to run
-Open `healthcare_risk_prediction.ipynb` and run cells top→bottom.
-Artifacts are saved under `outputs/`:
-- `eda_distributions.png`, `corr_matrix.png`
-- `roc_pr_curves.png`, `confusion_matrix.png`
-- `shap_summary.png`
-- `metrics.json`
-
 # Healthcare Risk Prediction (Heart Disease) — No-Widget Static Pipeline
 
 A clean, reproducible ML workflow for heart-disease risk prediction:
-- Robust EDA (saved as PNG)
-- Model selection (LogReg, RandomForest, optional XGBoost)
-- Evaluation (ROC, PR, confusion matrix)
-- Explainability with SHAP (high-res PNG + SVG)
 
-**Why it’s useful:** Static PNG/SVG artifacts (no Jupyter widgets) → easy to review in interviews and share on GitHub/LinkedIn.
+- **EDA**: distributions + correlation heatmap (saved as PNG)
+- **Model selection**: Logistic Regression, Random Forest, optional XGBoost (auto-select best by CV ROC AUC)
+- **Evaluation**: ROC AUC, PR AUC, confusion matrix, classification report
+- **Explainability**: SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
 
 ## Quickstart
 ```bash
@@ -33,32 +14,35 @@ conda activate heartds
 pip install -r requirements.txt
 python healthcare_risk_prediction_static.py
 
-Artifacts saved to outputs/:
+### Artifacts saved to outputs/:
 
-eda_distributions.png, corr_matrix.png
+- eda_distributions.png, corr_matrix.png
 
-roc_pr_curves.png, confusion_matrix.png
+- roc_pr_curves.png, confusion_matrix.png
 
-shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
+- shap_summary-600dpi.png + .svg, shap_top_features-600dpi.png + .svg
 
-metrics.json
+- metrics.json
 
-Headline Results (sample)
+#### Results (sample)
+<p> <img src="images/roc_pr_curves.png" width="600"> <img src="images/confusion_matrix.png" width="360"> </p> <p> <img src="images/shap_summary-600dpi.png" width="900"> </p>
 
-CV ROC AUC (LogReg winner): 0.903
+##### Headline numbers (example)
 
-Test ROC AUC: 0.926
+- CV ROC AUC (LogReg winner): 0.903
 
-Test PR AUC: 0.812
+- Test ROC AUC: 0.926
 
-Notes
+- Test PR AUC: 0.812
 
-Works offline after first run (if data is cached locally).
+###### Notes
 
-If xgboost is hard to install, remove it from requirements.txt—the script handles it gracefully.
+- Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
 
+- If xgboost is hard to install on your system, remove it from requirements.txt — the script falls back to LogReg/RF.
 
-3) **Ensure `requirements.txt` is clean** (no prose):
-```bash
-notepad requirements.txt
+- Deterministic by default (seed=42).
 
+####### License
+
+- MIT
