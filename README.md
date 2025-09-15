@@ -39,7 +39,8 @@ MIT
 
 ## Quickstart
 ```bash
-- conda create -n heartds python=3.10 -y
-- conda activate heartds
-- pip install -r requirements.txt
-- python healthcare_risk_prediction_static.py
+conda create -n heartds python=3.10 -y
+conda activate heartds
+pip install -r requirements.txt
+python healthcare_risk_prediction_static.py
+
