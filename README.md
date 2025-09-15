@@ -25,10 +25,10 @@ python healthcare_risk_prediction_static.py
 
 - metrics.json
 
-#### Results (sample)
+### Results (sample)
 <p> <img src="roc_pr_curves.png" width="600" /> <img src="confusion_matrix.png" width="360" /> </p> <p> <img src="shap_summary-600dpi.png" width="900" /> </p>
 
-##### Headline numbers (example)
+### Headline numbers (example)
 
 - CV ROC AUC (LogReg winner): 0.903
 
@@ -36,7 +36,7 @@ python healthcare_risk_prediction_static.py
 
 - Test PR AUC: 0.812
 
-###### Notes
+### Notes
 
 - Fully static pipeline (no notebook widgets) → easy to run, zip, and share.
 
@@ -44,6 +44,6 @@ python healthcare_risk_prediction_static.py
 
 - Deterministic by default (seed=42).
 
-####### License
+### License
 
 MIT
