@@ -26,7 +26,7 @@ python healthcare_risk_prediction_static.py
 - metrics.json
 
 ### Results (sample)
-<p> <img src="eda_distributions.png" width="450" /> <img src="corr_matrix.png" width="450" /> </p>
+<p> <img src="eda_distributions.png" width="900" /> </p> <p> <img src="corr_matrix.png" width="900" /> </p>
 <p> <img src="roc_pr_curves.png" width="900" /> </p>  <p> <img src="confusion_matrix.png" width="900" /> </p>  <p> <img src="shap_summary.png" width="900" /> </p> <p> <img src="shap_top_features.png" width="900" /> </p>
 
 ### Headline numbers (example)
