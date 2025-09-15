@@ -8,13 +8,13 @@ A clean, reproducible ML workflow for heart-disease risk prediction:
 - **Explainability:** SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
 
 ## Quickstart
-```bash
+bash
 - conda create -n heartds python=3.10 -y
 - conda activate heartds
 - pip install -r requirements.txt
 - python healthcare_risk_prediction_static.py
 
-### Artifacts (saved to outputs/)
+> Artifacts (saved to outputs/)
 
 - eda_distributions.png, corr_matrix.png
 
