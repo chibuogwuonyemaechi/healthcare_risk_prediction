@@ -7,13 +7,6 @@ A clean, reproducible ML workflow for heart-disease risk prediction:
 - **Evaluation:** ROC AUC, PR AUC, confusion matrix, classification report
 - **Explainability:** SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
 
-## Quickstart
-bash
-- conda create -n heartds python=3.10 -y
-- conda activate heartds
-- pip install -r requirements.txt
-- python healthcare_risk_prediction_static.py
-
 ## Artifacts (saved to outputs/)
 
 - eda_distributions.png, corr_matrix.png
@@ -24,7 +17,7 @@ bash
 ### Results (sample)
 
 <p> <img src="images/eda_distributions.png" width="900" /> </p> <p> <img src="images/corr_matrix.png" width="900" /> </p>
-<p> <img src="images/roc_pr_curves.png" width="900" /> </p>  <p> <img src="images/confusion_matrix.png" width="900" /> </p>  <p> <img src="images/shap_summary.png" width="900" /> </p> <p> <img src="images/shap_top_features.png" width="900" /> </p>
+<p> <img src="images/roc_pr_curves.png" width="900" /> </p>  <p> <img src="images/confusion_matrix.png" width="900" /> </p>  <p> <img src="shap_summary.png" width="900" /> </p> <p> <img src="images/shap_top_features.png" width="900" /> </p>
 
 ### Headline numbers (example)
 
@@ -41,3 +34,10 @@ bash
 ### License
 
 MIT
+
+## Quickstart
+```bash
+- conda create -n heartds python=3.10 -y
+- conda activate heartds
+- pip install -r requirements.txt
+- python healthcare_risk_prediction_static.py
