@@ -9,7 +9,7 @@ A clean, reproducible ML workflow for heart-disease risk prediction:
 
 ## Quickstart
 
-```bash
+
 conda create -n heartds python=3.10 -y
 conda activate heartds
 pip install -r requirements.txt
