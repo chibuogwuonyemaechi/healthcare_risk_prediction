@@ -7,6 +7,8 @@ A clean, reproducible ML workflow for heart-disease risk prediction:
 - **Evaluation:** ROC AUC, PR AUC, confusion matrix, classification report
 - **Explainability:** SHAP summary + top features exported as high-res PNG/SVG (no Jupyter widgets)
 
+Main script: [healthcare_risk_prediction_static.py](./healthcare_risk_prediction_static.py)
+
 ## Artifacts (saved to outputs/)
 
 - eda_distributions.png, corr_matrix.png
