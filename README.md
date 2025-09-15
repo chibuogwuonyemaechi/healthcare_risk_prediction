@@ -1,5 +1,7 @@
 # Healthcare Risk Prediction (Heart Disease) — No-Widget Static Pipeline
 
+[![Release](https://img.shields.io/github/v/release/<your-username>/healthcare_risk_prediction)](https://github.com/<your-username>/healthcare_risk_prediction/releases)
+
 A clean, reproducible ML workflow for heart-disease risk prediction:
 
 - **EDA:** distributions + correlation heatmap (saved as PNG)
