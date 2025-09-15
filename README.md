@@ -24,9 +24,8 @@ Main script: [healthcare_risk_prediction_static.py](./healthcare_risk_prediction
 
 ### Headline numbers (example)
 
-- CV ROC AUC (LogReg winner): 0.903
-- Test ROC AUC: 0.926
-- Test PR AUC: 0.812
+- Test set: ROC AUC 0.926, PR AUC 0.812 (winner: Logistic Regression, CV AUC 0.903).
+- SHAP shows 'ca', 'oldpeak', 'cp' among the strongest drivers (red/right increases risk).
 
 ### Notes
 
